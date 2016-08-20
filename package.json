@@ -3,8 +3,8 @@
   "description": "Module for interactions with redis store",
   "version": "0.1.0",
   "main": "lib/index.js",
-  "author": "Albertik",
-  "repository": "Albertik/sistemium-redis",
+  "author": "Sistemium",
+  "repository": "Sistemium/sistemium-redis",
   "license": "MIT",
   "scripts": {
     "compile": "babel src --out-dir lib",
