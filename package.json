@@ -1,7 +1,7 @@
 {
   "name": "sistemium-redis",
   "description": "Module for interactions with redis store",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "author": "Sistemium",
   "repository": "Sistemium/sistemium-redis",
