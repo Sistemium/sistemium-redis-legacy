@@ -1,12 +1,10 @@
 # sistemium-redis
 
-![Build Status](https://img.shields.io/travis/Albertik/sistemium-redis.svg)
-![Coverage](https://img.shields.io/coveralls/Albertik/sistemium-redis.svg)
 ![Downloads](https://img.shields.io/npm/dm/sistemium-redis.svg)
 ![Downloads](https://img.shields.io/npm/dt/sistemium-redis.svg)
 ![npm version](https://img.shields.io/npm/v/sistemium-redis.svg)
-![dependencies](https://img.shields.io/david/Albertik/sistemium-redis.svg)
-![dev dependencies](https://img.shields.io/david/dev/Albertik/sistemium-redis.svg)
+![dependencies](https://img.shields.io/david/Sistemium/sistemium-redis.svg)
+![dev dependencies](https://img.shields.io/david/dev/Sistemium/sistemium-redis.svg)
 ![License](https://img.shields.io/npm/l/sistemium-redis.svg)
 
 Module for interactions with redis store
