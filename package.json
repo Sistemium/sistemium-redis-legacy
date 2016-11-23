@@ -29,12 +29,12 @@
     "chai": "*",
     "isparta": "*",
     "mocha": "*",
-    "sinon": "*"
+    "sinon": "*",
+    "watch": "latest"
   },
   "dependencies": {
     "bluebird": "^3.4.1",
-    "redis": "^2.6.2",
-    "watch": "^0.19.2"
+    "redis": "^2.6.2"
   },
   "engines": {
     "node": "^5.4.1",
