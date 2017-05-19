@@ -1,11 +1,20 @@
+export default {
+  setup,
+  hgetJson,
+  hsetJson,
+  lpushJson,
+  lrangeJson,
+  ltrim
+};
+
 import redis from 'redis';
 import bluebird from 'bluebird';
 bluebird.promisifyAll(redis);
 
-var redisClient;
+let redisClient;
 
 function setup (config) {
-  redisClient = redis.createClient(config);
+  return (redisClient = redis.createClient(config));
 }
 
 function hgetJson (name, key) {
@@ -17,5 +26,17 @@ function hsetJson (name, id, data) {
   return redisClient.hsetAsync(name, id, JSON.stringify(data));
 }
 
+function lpushJson (name, data) {
+  return redisClient.lpushAsync(name, JSON.stringify(data));
+}
 
-export default {setup, hgetJson, hsetJson};
+function lrangeJson (name, start, stop) {
+  return redisClient.lrangeAsync(name, start, stop)
+    .then(result => {
+      return result.map(item => JSON.parse(item));
+    });
+}
+
+function ltrim(name, start, stop) {
+  return redisClient.ltrimAsync(name, start, stop);
+}
