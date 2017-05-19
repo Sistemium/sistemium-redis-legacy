@@ -1,7 +1,7 @@
 {
   "name": "sistemium-redis",
   "description": "Module for interactions with redis store",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "main": "lib/index.js",
   "author": "Sistemium UAB <uab@sistemium.com>",
   "contributors": [
